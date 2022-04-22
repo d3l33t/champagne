@@ -12,7 +12,9 @@ contract Champagne is ERC721, Ownable, EIP712, ERC721Votes {
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("Champagne", "CHAMP") EIP712("Champagne", "1") {}
+    constructor() ERC721("Champagne", "CHAMP") EIP712("Champagne", "1") {
+        _tokenIdCounter.increment();
+    }
 
     function _baseURI() internal pure override returns (string memory) {
         return "https://raw.githubusercontent.com/d3l33t/champagne/main/nft/";
