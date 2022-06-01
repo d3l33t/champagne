@@ -1236,8 +1236,8 @@
       ]
     },
     "/Users/nikko/dev/champagne/contracts/Champagne.sol": {
-      "lastModificationDate": 1654058804813,
-      "contentHash": "4cfc018ca04c2c36d67513cbfeaba92b",
+      "lastModificationDate": 1654060238343,
+      "contentHash": "497fe70d8c10364f513aef30346abcf1",
       "sourceName": "contracts/Champagne.sol",
       "solcConfig": {
         "version": "0.8.4",

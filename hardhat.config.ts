@@ -12,10 +12,7 @@ import "@nomiclabs/hardhat-etherscan";
 //   }
 // });
 
-const ALCHEMY_API_KEY = ""
-const ROPSTEN_PRIVATE_KEY = "";
-const RINKEBY_PRIVATE_KEY = ROPSTEN_PRIVATE_KEY
-const MAINNET_PRIVATE_KEY = ""
+
 
 const config: HardhatUserConfig = {
   solidity: {

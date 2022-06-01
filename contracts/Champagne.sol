@@ -14,6 +14,8 @@ contract ChampagneCollective is ERC721, Ownable, EIP712, ERC721Votes {
 
     constructor() ERC721("Champagne Collective", "CHAMP") EIP712("Champagne Collective", "1") {
         _tokenIdCounter.increment();
+        // mint the first 10
+        _initialMint();
     }
 
     function _baseURI() internal pure override returns (string memory) {
@@ -24,6 +26,19 @@ contract ChampagneCollective is ERC721, Ownable, EIP712, ERC721Votes {
         uint256 tokenId = _tokenIdCounter.current();
         _tokenIdCounter.increment();
         _safeMint(to, tokenId);
+    }
+
+    function _initialMint() private onlyOwner {
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
+        safeMint(msg.sender);
     }
 
     // The following functions are overrides required by Solidity.
