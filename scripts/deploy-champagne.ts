@@ -6,7 +6,7 @@ async function main() {
 
   
   // We get the contract to deploy
-  const Champagne = await ethers.getContractFactory("Champagne");
+  const Champagne = await ethers.getContractFactory("ChampagneCollective");
   const champagne = await Champagne.deploy();
 
   console.log("champagne deployed to:", champagne.address);

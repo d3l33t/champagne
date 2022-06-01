@@ -7,12 +7,12 @@ import "@openzeppelin/contracts/utils/cryptography/draft-EIP712.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/draft-ERC721Votes.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 
-contract Champagne is ERC721, Ownable, EIP712, ERC721Votes {
+contract ChampagneCollective is ERC721, Ownable, EIP712, ERC721Votes {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("Champagne", "CHAMP") EIP712("Champagne", "1") {
+    constructor() ERC721("Champagne Collective", "CHAMP") EIP712("Champagne Collective", "1") {
         _tokenIdCounter.increment();
     }
 

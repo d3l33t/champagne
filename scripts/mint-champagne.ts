@@ -6,8 +6,18 @@ async function main() {
 
   
   // We get the contract to deploy
-  const Champagne = await ethers.getContractAt("Champagne", "0x83aD340361702595D88F051dDf7Bdbfc3d6c300B", owner);
+  const Champagne = await ethers.getContractAt("ChampagneCollective", "0x2406cE61A146805C4E335D73986011269eB8b21A", owner);
   console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+  // console.log(await Champagne.safeMint("0x036731DDc861Eae89d70e04FB9AF2aF23D2dFC90"))
+
   // console.log(await Champagne.tokenURI('1'))
 
 }

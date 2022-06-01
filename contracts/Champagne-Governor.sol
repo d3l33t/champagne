@@ -13,7 +13,7 @@ contract ChampagneGovernor is Governor, GovernorSettings, GovernorCountingSimple
         Governor("ChampagneGovernor")
         GovernorSettings(1 /* 1 block */, 45818 /* 1 week */, 1)
         GovernorVotes(_token)
-        GovernorVotesQuorumFraction(50)
+        GovernorVotesQuorumFraction(49)
         GovernorTimelockControl(_timelock)
     {}
 
@@ -44,15 +44,6 @@ contract ChampagneGovernor is Governor, GovernorSettings, GovernorCountingSimple
         returns (uint256)
     {
         return super.quorum(blockNumber);
-    }
-
-    function getVotes(address account, uint256 blockNumber)
-        public
-        view
-        override(IGovernor, GovernorVotes)
-        returns (uint256)
-    {
-        return super.getVotes(account, blockNumber);
     }
 
     function state(uint256 proposalId)
